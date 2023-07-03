@@ -1,0 +1,50 @@
+@import "variables";
+
+.main-width {
+  width: $main-width;
+}
+
+header {
+  border: 2px solid $accent-color;
+  .menu {
+    background-color: $primary-color;
+    li {
+      display: inline-block;
+      padding-left: 10px;
+      list-style: none;
+      &:first-of-type {
+        color: red;
+      }
+    }
+  }
+}
+
+.list__first {
+  li {
+    &:first-of-type {
+      color: orange;
+    }
+    &:last-of-type {
+      color: green;
+    }
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+footer {
+  .menu {
+
+
+
+    li {
+      float: left;
+      &:last-of-type {
+        float: right;
+      }
+
+      }
+
+  }
+}
