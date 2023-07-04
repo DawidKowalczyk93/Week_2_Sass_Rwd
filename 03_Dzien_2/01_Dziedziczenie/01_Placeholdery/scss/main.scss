@@ -1,0 +1,28 @@
+%clearfix{
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.test-mixin {
+  @extend %clearfix;
+}
+
+.left_box {
+  border: 1px solid cornflowerblue;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.right_box {
+  border: 1px solid cornflowerblue;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+.container {
+  border: 1px solid cornflowerblue;
+  height: 200px;
+}

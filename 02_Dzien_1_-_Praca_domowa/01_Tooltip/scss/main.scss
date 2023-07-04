@@ -1,0 +1,16 @@
+@mixin setTooTip($text, $color) {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: $text;
+    top: 5px;
+    padding: 10px;
+    color: $color;
+    border: 1px solid darkgoldenrod;
+  }
+}
+li:hover{
+  @include setTooTip('Test', red);
+}
+
+
