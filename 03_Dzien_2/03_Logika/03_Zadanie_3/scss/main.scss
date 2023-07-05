@@ -1,0 +1,17 @@
+@for $i from 1 through 10 {
+  @if($i % 2 == 0) {
+    .box__block_#{$i} {
+      width: 100px;
+      height: 20px;
+      border: 2px solid orange;
+    }
+  }
+  @else if($i % 2 != 0) {
+    .box__block_#{$i} {
+      width: 100px;
+      height: 20px;
+      border:2px solid blue;
+    }
+  }
+}
+

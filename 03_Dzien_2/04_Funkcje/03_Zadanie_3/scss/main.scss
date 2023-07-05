@@ -1,0 +1,8 @@
+@use "sass:math";
+
+$number : 400;
+
+
+p {
+  font-size: math.percentage($number/100);
+}

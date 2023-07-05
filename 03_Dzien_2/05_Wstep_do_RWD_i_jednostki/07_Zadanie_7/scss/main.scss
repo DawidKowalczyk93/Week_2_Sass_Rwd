@@ -1,0 +1,11 @@
+.images {
+  width: 80%;
+  min-height: 100px;
+  border: 2px solid grey;
+  .img_one {
+    background-image: url(../images/cat.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 200px;
+  }
+}
