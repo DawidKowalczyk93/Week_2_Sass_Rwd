@@ -1,0 +1,35 @@
+.header {
+  background-color: $bg-gray;
+}
+
+.nav {
+  padding: 45px 0 30px 0;
+}
+
+.nav__bars {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.nav__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &--logo {
+    width: 100px;
+    font-family: "Oleo Script", cursive;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ff4486;
+    border-radius: 5px;
+    margin: 0;
+  }
+  &--info {
+    display: inline-block;
+    color: #696969;
+    font-weight: 700;
+  }
+}

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 body {
   margin: 0;
   padding: 0;
@@ -10,9 +12,32 @@ body {
   overflow: hidden;
   background-size: cover;
   background: rgb(0, 0, 0) url(../images/board-bg.jpg) center bottom;
+@keyframes play {
+  100% {
+    background-position: -2000px;
+  }
+}
+  @keyframes walk {
+    0% {
+      left:calc(vw + 200px);
+    }
+    100% {
+      left:-200px;
+    }
+
+  }
+
+
 
   .zombie {
-
+    position: absolute;
+    top: 800px;
+    left: 1100px;
+    height: 312px;
+    width: 200px;
+    background-image: url(../images/walkingdead.png);
+    background-position: left;
+    animation: play 0.8s 0s steps(10) infinite, walk 10s 0s infinite linear;
   }
 }
 
